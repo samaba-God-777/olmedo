@@ -326,24 +326,11 @@ h1::before {
   .container .card:hover .box .content a{
     background: #ff568f;
   }
-
-  @media screen and (max-width: 600px){
-    .container .card{
-    
-      display: flex;
-      flex-direction: column;
-    }
-    .card{
-      width: 200px;
-      font-size: 1em;
-    }
-  }
-
-
-
+  
   .main {
     background-color: #04010b;
     position: relative;
+   
     width: 100%;
     min-height: 150vh;
     display: flex;
