@@ -1,0 +1,9 @@
+.row {
+    height: 100vh;
+    background-image: url(./imagen/foto1.jpeg);
+    background-size: cover;
+    
+}
+.row1 {
+    background-color: aliceblue;
+}
