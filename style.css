@@ -28,13 +28,14 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #f4f6f2;
+    background-color: #29351d;
     color: rgb(255, 255, 255);
+    border-radius: 5px;
   }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #232223;
+    background-color: #7df505;
     color: #fff;
   }
   
@@ -120,22 +121,56 @@ h1::before {
       display: block;
       text-align: left;
       font-size: 2em;
+      object-fit: cover;
     }
+  }
+  h1 {
+    object-fit: cover;
+    flex-grow: 1;
   }
 .picture {
     position: absolute;
     right: 0;
+    object-fit: cover;
 }
-  .img {
-    width: 100%;
+.foto {
+  background-image: url(./imagen/portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  object-fit: cover;
+   width: 100%;
+   height: 220vh;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   
+}
+  .picture5 {
+    width: 90%;
     height: 200vh;
-    border: solid 5px black ;
+    border-radius: 5px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: 0.5s ease;
+  }
+   
+  .foto .picture5:hover{
+    cursor: crosshair;
+    width: 430px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+  .text-dark{
+    position: absolute;
+    font-size: 4em;
+    top: 10px;
+    object-fit: cover;
   }
   
-  
-  h2{
-    color: #fff;
-  }
+
   .section1 {
     width: 100%;
     height: 100vh;
