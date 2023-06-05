@@ -5,7 +5,7 @@ section {
     justify-content: center;
     align-items: center;
 }
-section img {
+section .picture1 {
     width: 0;
     border-radius: 5px;
   
@@ -14,7 +14,7 @@ section img {
     opacity: 8;
     transition: 0.5s ease;
 }
-section img:hover{
+section .picture1:hover{
     cursor: crosshair;
     width: 430px;
     opacity: 1;
