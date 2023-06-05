@@ -197,6 +197,8 @@ h1::before {
     height: 100vh;
     display: flex;
     text-align: center;
+    flex-direction: column;
+   
     padding: 60px 40px;
     color: black;
     background-image: url(./picture/logo1.png);
@@ -205,56 +207,49 @@ h1::before {
     background-position: center;
     background-size: cover;
     padding-top: calc(50vh -50px);
-    z-index: 2;
+    
   }
   /*edition of background picture 1*/
-  .pic1{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 400px;
-    height: 400pxh;
-   
+  .section2 .imagen1{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: 0.5s ease;
   }
-  .pic2{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    height: 400pxh;
-   
+  .section2 .imagen1:hover{
+    cursor: crosshair;
+    width: 430px;
+    height: 430px;
+    opacity: 1;
+    filter: contrast(120%);
+    border-radius: 15px;
   }
-  .pic3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 400pxh;
+  .texto {
+   font-size: 2em;
+   object-fit: cover;
+   text-align: center;
+
+  }
     
-  }
-  .pic4{
-    position: absolute;
-   right: 0;
-   bottom: 0;
-    width: 400px;
-    height: 400pxh;
-    
-  }
+  
   @media (max-width: 600px){
-    .pic1 .pic2 .pic3 .pic4 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100px;
+   .section2 .pic1 .pic2 .pic3 .pic4 {
+        display: inline-block;
+       flex-direction: column;
+       object-fit: cover;
+       position: relative;
+       
+       
     }
   }
     
   
 
-  .texto {
-    padding: 40px 0;
-
-  }
+  
 
   /*estilo de cards*/
   .container {
